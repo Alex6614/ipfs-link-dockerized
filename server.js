@@ -19,11 +19,19 @@ const app = express();
 app.use(busboy());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+	
+	app.get('/',function(req,res){
+       
+     res.sendFile(path.join(__dirname+'/index.html'));
+
+	});
+
 /*
 	Route to show IPFS hash
 */
 
-app.get('/', (req, res) => {
+app.get('/finished', (req, res) => {
   res.send('File sent to IPFS!\nHash is: ' + req.query.hash);
 });
 
@@ -46,7 +54,7 @@ app.route('/upload')
 		        } else {
 		          	console.log(file[0].hash);
 		          	hash = file[0].hash;
-		          	res.redirect('/?hash=' + hash)
+		          	res.redirect('/finished?hash=' + hash)
 		        }
 	      	})
         });
