@@ -1,0 +1,13 @@
+{
+  "name": "ipfs_interface",
+  "version": "1.0.0",
+  "description": "IPFS Interface, Node.js on Docker",
+  "author": "Alexander Ma <alexma6614@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
