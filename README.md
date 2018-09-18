@@ -3,4 +3,4 @@ This is a small proof-of-concept for interfacing with IPFS. It simply pulls up a
 
 ## Setup
 1. Setup Docker
-2. Run `docker run -p 8080:8080 alex6614/ipfs-interface-docker:v3`
+2. Run `docker run -p 8080:8080 alex6614/ipfs-interface-docker:ver3`
